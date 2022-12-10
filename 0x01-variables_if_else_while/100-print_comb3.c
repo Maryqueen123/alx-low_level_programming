@@ -3,32 +3,23 @@
 #include <stdio.h>
 
 /**
-* main - prints all possible different combinations of two digits
-*
-* Return: 0
-*/
-
+ * main - prints all possible different combinations of two digits.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
+	int i;
 
-int num1, num2;
-
-num1 = 01;
-
-while (num1 < 10)
-{
-	num2 = 01;
-	while (num2 < 10)
+	for (i = 48; i < 100; i++)
 	{
-		putchar(num1);
-		putchar(num2);
-		num2++;
-		putchar(',');
-		putchar(' ');
+		putchar(i);
+		if (i != 100)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
-	num1++;
-}
-putchar('\n');
-return (0);
-
+	putchar('\n');
+	return (0);
 }
