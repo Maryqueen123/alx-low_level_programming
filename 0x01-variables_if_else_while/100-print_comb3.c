@@ -13,11 +13,11 @@ int main(void)
 
 int num1, num2;
 
-num1 = 1;
+num1 = 01;
 
 while (num1 < 10)
 {
-	num2 = 1;
+	num2 = 01;
 	while (num2 < 10)
 	{
 		putchar(num1);
